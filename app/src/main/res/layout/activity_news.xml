@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/layCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cover"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ছবি থেকে মুহূর্তেই স্টিকার "
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="#8A000000"
+            android:textColor="#E60E0E"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layCover"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="কাস্টম এআই স্টিকার জেনারেটর। এতে ব্যবহারকারীরা ক্যামেরা রোল বা প্ল্যাটফর্মে থাকা যে কোনো ছবি বা ভিডিও ব্যবহার করে স্টিকার তৈরি করতে পারবেন।
+আইমেসেজে যেভাবে স্টিকার তৈরি হয়, প্রায় একই রকম ভাবে এক ক্লিকেই এই কাজ সারতে পারবেন ব্যবহারকারী। সেক্ষেত্রে একটি ছবি থেকে যে কোনো বস্তুকে আলাদা করে ফেলা যাবে সহজে। মনের মতো না হলে আবার ম্যানুয়ালি বিষয় নির্বাচনও করে নেওয়া যাবে।
+স্টিকার তৈরি হয়ে গেলে, সেটি ব্যবহারকারী তার যে কোনো রিল বা স্টোরিতে ব্যবহার করতে পারবেন। সেক্ষেত্রে ‘ইউজ স্টিকার’ বোতামে ট্যাপ করতে হবে।
+"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/fabbutton"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C16F69"
+        android:src="@drawable/voice">
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
